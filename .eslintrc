@@ -1,0 +1,21 @@
+{
+  "extends": ["prettier"],
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "parser": "@typescript-eslint/parser",
+  "env": {
+    "node": true,
+    "es6": true,
+    "jest": true
+  },
+  "rules": {
+    "complexity": [
+      "error",
+      {
+        "max": 7
+      }
+    ],
+    "max-depth": ["error", 5]
+  }
+}
